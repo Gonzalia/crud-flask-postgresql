@@ -1,0 +1,170 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(216, 216, 216);
+
+    background-image: url(https://img4.goodfon.com/wallpaper/nbig/a/1d/nebo-zvezdy-luna-oblaka-noch-art-risunok-minimalizm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    margin: auto;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 500px;
+    background-color: rgb(15, 15, 15);
+
+    padding: 20px;
+    margin-top: 50px;
+    border: 1px solid black;
+}
+
+@media only screen and (max-width : 900px) {
+    .content{
+        width: 250px;
+    }    
+    .content h1{
+        font-size: 20px;
+    }
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+form label{
+    margin: 10px 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+input{
+    width: 150px;
+    height: 25px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    caret-color: white;
+}
+
+input:hover{
+    transform: scale(1.2);
+    transition: .5s;
+    border: 1px solid white;
+}
+
+
+button{
+    margin-top: 15px;
+    height: 30px;
+    width: 150px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.save_user{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+
+    border-radius: 10%;
+}
+
+.save_user:hover{
+    transform: scale(1.2);
+    transition: .5s;
+    background-color: rgb(31, 31, 31);
+    border: 1px solid white;
+    cursor: grab;
+
+}
+
+
+.usuarios{
+    display: flex;
+    flex-direction: column;
+}
+
+.usuarios h1{
+    color: rgb(255, 255, 255);
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li{
+    overflow-x: auto;
+    border: 1px solid white;
+    margin: 10px 0;
+    margin-right: 25px;
+    width: 400px;
+    background-color: rgb(29, 29, 29);
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px;
+
+    font-family: 'Unbounded', cursive;
+    color: white;
+}
+
+li .user_item{
+    font-family: 'Unbounded', cursive;
+
+}
+
+.user_item button{
+    font-family: 'Unbounded', cursive;
+}
+
+.lista_titulo{
+    margin-top: 30px;
+}
+
+
+.btn-delete, .btn-edit{
+    max-height: 3rem;
+    max-width: 7rem;    
+
+}
+
+.btn-delete{
+    background-color: rgb(207, 73, 73);
+    border: none;
+}
+
+.btn-edit{
+    background-color: rgb(34, 97, 34);
+    border: none;
+}
+
+.btn-delete:hover, .btn-edit:hover{
+    cursor: grab;
+    transform: scale(1.1);
+    transition: .5s;
+    border: 1px solid black;
+}
+
+*::-webkit-scrollbar{
+    background-color: rgb(17, 17, 17);
+    width: 7px;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: rgb(85, 85, 85);
+    border-radius: 10px;
+}
